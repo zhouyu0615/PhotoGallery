@@ -71,18 +71,7 @@ public class PhotoGalleryFragment extends Fragment {
 			AsyncTask<Void, Void, ArrayList<GalleryItem>> {
 		@Override
 		protected ArrayList<GalleryItem> doInBackground(Void... params) {
-			// try {
-			// String result=new
-			// FlickerFetchr().getUrl("http://api.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=11d0e5916d7df8dd430226647c20f2fe&extras=url_s");
-			// //String result=new FlickerFetchr().getUrl("http://google.com/");
-			// //String result=new
-			// FlickerFetchr().getUrl("https://www.flickr.com/");
-			//
-			// Log.d(TAG, result);
-			//
-			// } catch (Exception e) {
-			// Log.e(TAG, "failed to fetche url");
-			// }
+
 
 			return new FlickerFetchr().fetchItems();
 
